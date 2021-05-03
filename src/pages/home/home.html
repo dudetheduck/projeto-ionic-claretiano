@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar color="warning">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            Restaurante do Pato Gourmet
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding class="test">
+    <ion-img class="welcome-img" src="../assets/imgs/welcome.png"></ion-img>
+    <ion-card class="homepage">
+        <ion-card-content>
+            <h1>Promoção do dia!</h1>
+            <h2>Um prato de entrada, uma refeição e uma sobremesa de <s>66.80</s> por apenas 48.90!!</h2>
+            <button ion-button color="warning" [navPush]="pushPage" [navParams]="params">Detalhes</button>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

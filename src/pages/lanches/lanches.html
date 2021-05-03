@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-navbar color="warning">
+        <ion-title>Lanches</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item *ngFor="let lanche of lanches" class="item" (click)="newPage(lanche)">
+            <div class="food-left-wrapper">
+                <ion-img class="food-preview" src="{{lanche.img}}"></ion-img>
+                <button ion-button color="warning">Detalhes</button>
+            </div>
+            <p>{{lanche.nome}}</p>
+        </ion-item>
+    </ion-list>
+</ion-content>

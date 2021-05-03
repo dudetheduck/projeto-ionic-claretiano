@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-navbar color="warning">
+        <ion-title>Detalhes</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card>
+        <ion-card-content>
+            <ion-img class="card-image" src="{{cardapioItem.img}}"></ion-img>
+            <h1>{{cardapioItem.nome}}</h1>
+            <p class="desc">{{cardapioItem.desc}}</p>
+            <br>
+            <b>Preço: {{ cardapioItem.preco.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) }}</b>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

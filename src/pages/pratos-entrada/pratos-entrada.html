@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-navbar color="warning">
+        <ion-title>Pratos de Entrada</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item *ngFor="let prato of pratosEntrada" class="item" (click)="newPage(prato)">
+            <div class="food-left-wrapper">
+                <ion-img class="food-preview" src="{{prato.img}}"></ion-img>
+                <button ion-button color="warning">Detalhes</button>
+            </div>
+            <p>{{prato.nome}}</p>
+        </ion-item>
+    </ion-list>
+</ion-content>
